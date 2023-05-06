@@ -3,10 +3,9 @@
     padding:0;
     border:0;
     outline:0;
-    text-decoration: 0;
+    text-decoration: none;
     list-style:none;
-    box-sizing:border-box;
-    
+    box-sizing:border-box;    
 }
 
 html{
@@ -113,8 +112,14 @@ body{
     color: #35AF58 !important;
     border-radius: 10px;
 }
-
-
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
 .nav-link{
     padding: 0 !important;
     text-align: center;
@@ -169,9 +174,8 @@ body{
 }
 .fslide{
     height: 500px;
-    width: 650px;
     padding: 0 !important;
-    margin-top: 60px !important;
+    margin: 80px 0 0 80px !important;
 }
 .btn{
     margin: 5%;
@@ -222,35 +226,34 @@ width: 100px !important;
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url("/res/industry.jpg");
+    background-image: url("https://www.theclimategroup.org/sites/default/files/styles/image_with_text_desktop/public/2020-10/shutterstock_446584552.jpg?h=3e43625b&itok=LDrQqP98")
 }
-
 .card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url("/res/smartcity.jpg") ;
+    background-image: url("https://www.leparisien.fr/resizer/F_37hWNdd3buEsqMQhIHsvObKqc=/1200x675/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/V4MLLWXSZZOV6MWL5S3AIBPIHU.jpg") ;
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
-    background-image: url("/res/household.jpg") ;
+    background-image: url("https://www.mydomaine.com/thmb/3b9tEyy9erQDDxRN6bQEpYbyTLM=/2400x0/filters:no_upscale():strip_icc()/helfordln-1-7556f8609cb94144b0fca16114979ecb.jpg") ;
 }
 
 .card--4 .card__img, .card--4 .card__img--hover {
-    background-image: url("/res/smog.jpeg") ;
+    background-image: url("https://tennews.in/wp-content/uploads/2019/11/3-1.jpeg") ;
 }
 
 .card--5 .card__img, .card--5 .card__img--hover {
-    background-image: url("/res/hospital.jpg") ;
+    background-image: url("https://img3.exportersindia.com/product_images/bc-full/2021/5/8742117/hospital-interior-designing-services-1620112418-5810071.jpeg") ;
 }
 
 .card--6 .card__img, .card--6 .card__img--hover {
-    background-image: url("/res/metro.png") ;
+    background-image: url("https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg") ;
 }
 
 .card--7 .card__img, .card--7 .card__img--hover {
-    background-image: url("/res/commercial.jpg") ;
+    background-image: url("https://zionarch.com/wp-content/uploads/2021/08/feature-image-4.jpg") ;
 }
 
 .card--8 .card__img, .card--8 .card__img--hover {
-    background-image: url("/res/mall.jpg") ;
+    background-image: url("https://images.unsplash.com/photo-1580793241553-e9f1cce181af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvcHBpbmclMjBtYWxsfGVufDB8fDB8fA%3D%3D&w=1000&q=80") ;
 }
 
 .card__like {
@@ -419,7 +422,7 @@ width: 100px !important;
   font-size: 1rem;
   color:rgb(73, 71, 71);
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
 }
 .choose-s-q{
     padding-left: 1rem;
@@ -429,11 +432,12 @@ width: 100px !important;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+/* What makes us unique ? */
 
 .whatmakeunique{
    display: flex;
    justify-content: center;
-   margin-top:5rem;
+   margin-top:2rem;
    color:#4b4c4b;
    font-size:3rem;
 }
@@ -446,13 +450,13 @@ width: 100px !important;
 .uniquecards
 {
     margin: 10vh auto;
- width:48vh;
-  height:60vh;
-  border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
-  transition: .6s ease;
-  background: white;
-  text-align: center;
+    width:25rem;
+    height:30rem;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    transition: .6s ease;
+    background: white;
+    text-align: center;
  
  
 }
@@ -465,7 +469,9 @@ img {
     max-width: 100%;
     max-height: 100%;
   }
-
+.uniquecards__img{
+    height: 215px;
+}
   .uniquecards h1{
     font-size: 1.5rem;
     color: #303336;
@@ -482,24 +488,6 @@ p {
     font-size: 1rem;
     line-height: 1.25rem;
   }
-
-
-  .btn-outline-success
-{
-    background:  #1d9941!important;
-    color:#fff  !important;
-    border-radius: 0.5rem  !important;
-    transition:all 400ms ease  !important;
-    font-weight:1rem !important;
-    margin-top: 1.5rem !important;
-}
-
-.btn-outline-success:hover{
-    border-color:  #1d9941 !important;
-    background: #f5f5f5 !important;
-    color:   #1d9941 !important;
-    margin-left:1rem  !important;
-}
 
 
 .uniquecards__info
@@ -536,3 +524,104 @@ top:3.1rem;
 position: relative;
 top:-1.1rem;
 }
+
+/* NEWS */
+
+.newshead{
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+    color:#4b4c4b;
+    font-size:4em;
+ }
+.newsbox{
+    padding-top: 40px;
+    background-color: #fafafa;
+}
+.img1{
+    height: 670px;
+    padding-right: 30px;
+    border-right: 2px solid rgb(209, 209, 209);
+}
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+.one{
+    height: 800px;
+    margin-left: 120px;
+}
+.news{
+    text-align: left;
+    padding: 10px 0;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+.head1:hover, .head2:hover, .head3:hover{
+    border-radius: 10px;
+    background-color: #dcdcdc;
+}
+.n1{
+    padding-left: 10px;
+    margin-right: 30px !important;
+}
+.img2,.img3{
+    width: 500px;
+}
+hr{
+    margin: 25px !important;
+}
+
+.mission-on
+{
+    display: flex;
+}
+
+.mission
+{
+
+    display: flex;
+    margin: 10vh auto;
+    width:50rem;
+    height:45rem;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    transition: .6s ease;
+    background: #35AF58 ;
+    text-align: center;
+    margin-left: 4rem;
+    margin-top: 15rem;
+}
+.mission_info h1{
+    color: #fff;
+    margin-top: 3rem;
+    margin-left:3rem;
+    text-align: start;
+
+}
+.line
+{
+   margin-left: 3rem;
+}
+.mission_info p{
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: start;
+    line-height:2rem;
+   padding: 5rem;
+   margin-left:-2rem ;
+   margin-top: -3rem;
+
+}
+
+.fire{
+
+    height: 35rem;
+    width: 40rem;
+   
+    position: relative;
+    right:4rem;
+    top:30rem;
+    
+
+  }
